@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabby Store Products | TabbyStore.TN</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header products-header">
+
+        <div class="header-decoration decoration-one"></div>
+        <div class="header-decoration decoration-two"></div>
+
+        <div class="header-content">
+
+            <div class="logo-box">
+
+                <img src="Tabby_enhanced.jpg"
+                     alt="TabbyStore logo"
+                     class="logo-image">
+
+                <div class="brand-name">
+                    <span>TabbyStore</span><small>.TN</small>
+                </div>
+
+            </div>
+
+            <nav>
+                <a href="index.html">Main</a>
+                <a href="products.html">Products</a>
+                <a href="info.html">Info</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- PRODUCTS PAGE -->
+
+    <main>
+
+        <!-- PAGE TITLE -->
+
+        <section class="products-page-header">
+
+            <h1>Tabby Store Products</h1>
+
+            <p>
+                Découvrez notre sélection d’articles tendance,
+                originaux et soigneusement choisis.
+            </p>
+
+        </section>
+
+
+        <!-- CATEGORY 1 -->
+
+        <section class="product-category">
+
+            <h2>Sacs & Portefeuilles</h2>
+
+            <div class="product-grid" id="bags-grid">
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORY 2 -->
+
+        <section class="product-category">
+
+            <h2>Notebooks & Carnets + Stylos</h2>
+
+            <div class="product-grid" id="notebooks-grid">
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORY 3 -->
+
+        <section class="product-category">
+
+            <h2>Sweats & Capuches</h2>
+
+            <div class="product-grid" id="sweats-grid">
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORY 4 -->
+
+        <section class="product-category">
+
+            <h2>Articles BTS</h2>
+
+            <div class="product-grid" id="bts-grid">
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORY 5 -->
+
+        <section class="product-category">
+
+            <h2>Accessoires & Plus</h2>
+
+            <div class="product-grid" id="accessoires-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-decoration footer-decoration-one"></div>
+        <div class="footer-decoration footer-decoration-two"></div>
+
+        <div class="footer-container">
+
+            <div class="footer-section">
+
+                <h2>Contact Us!</h2>
+
+                <p>
+                    📲 WhatsApp :
+                    <a href="https://wa.me/21657123668">
+                        +216 57 12 36 68
+                    </a>
+                </p>
+
+                <p>
+                    📸 Instagram :
+                    <a href="#">
+                        Tabbystore.Tn
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="footer-section">
+
+                <h2>Follow Us</h2>
+
+                <p>
+                    📘 Facebook :
+                    <a href="#">
+                        Tabbystore.Tn
+                    </a>
+                </p>
+
+                <p>
+                    📦 Livraison Tunis 🇹🇳
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p class="order-message">
+                Pour passer commande, contactez-nous sur nos pages
+                <strong>Facebook</strong>, <strong>Instagram</strong> ou <strong>WhatsApp</strong>.
+            </p>
+
+            <p>
+                © 2026 TabbyStore.TN · Tunisia
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- PRODUCT MODAL -->
+
+    <div id="product-modal" class="product-modal">
+
+        <div class="product-modal-content">
+
+            <button class="close-modal">&times;</button>
+
+            <div class="product-gallery">
+
+                <button class="gallery-arrow prev-image">&#10094;</button>
+
+                <img id="modal-product-image" src="" alt="">
+
+                <button class="gallery-arrow next-image">&#10095;</button>
+
+                <p id="image-counter">1 / 5</p>
+
+            </div>
+
+            <h2 id="modal-product-name"></h2>
+
+            <p id="modal-product-price"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

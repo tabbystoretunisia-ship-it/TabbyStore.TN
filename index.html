@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TabbyStore.TN | Tabby Store Tunisia</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+
+    <header class="site-header">
+
+
+        <!-- Decorative elements -->
+
+        <div class="header-decoration decoration-one"></div>
+
+        <div class="header-decoration decoration-two"></div>
+
+
+        <div class="header-content">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-box">
+
+
+                <!-- Your actual logo -->
+
+                <img
+                    src="Tabby_enhanced.jpg"
+                    alt="TabbyStore logo"
+                    class="logo-image"
+                >
+
+
+                <!-- This text is separate from the image -->
+
+                <div class="brand-name">
+
+                    <span>TabbyStore</span><small>.TN</small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NAVIGATION -->
+
+          <nav>
+    <a href="index.html">Main</a>
+    <a href="products.html">Products</a>
+    <a href="info.html">Info</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+         ================================================= -->
+
+    <main>
+
+
+        <!-- =================================================
+             WELCOME
+             ================================================= -->
+
+        <section class="content-box welcome">
+
+
+            <span class="section-decoration">
+                ✦
+            </span>
+
+
+            <h2>
+                 Bienvenue chez Tabbystore.TN 🇹🇳
+            </h2>
+
+
+            <p class="welcome-message">
+                🌸 Marhbé bikom chez Tabbystore.TN 🌸
+            </p>
+
+
+            <p>
+                Découvrez notre sélection pour tous les goûts et toutes les vibes ✨
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+             ================================================= -->
+
+        <section class="content-box about">
+
+
+            <span class="section-decoration">
+                ✦
+            </span>
+
+
+            <h2>
+                About us 🩷
+            </h2>
+
+
+            <p>
+
+                Nous sommes une boutique en ligne de vêtements et
+                d’accessoires, proposant une sélection d’articles
+                tendance, originaux et soigneusement choisis.
+
+                Sweats & capuches, sacs, portefeuilles, carnets,
+                stylos originaux, articles BTS et bien plus encore —
+                le tout avec une attention particulière à la qualité
+                et à des prix accessibles. 🩷
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCT SLIDESHOW
+             ================================================= -->
+
+        <section class="slideshow-section">
+
+
+
+            <!-- SLIDESHOW -->
+
+           <section class="slideshow-section">
+    <h2> Our Favorites</h2>
+
+    <p class="slideshow-intro">
+        ✨ Un petit aperçu de quelques-uns de nos articles préférés ✨
+    </p>
+
+    <div class="slideshow">
+
+        <div class="slide active">
+            <img src="Images/product1.jpg" alt="Produit 1">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product2.jpg" alt="Produit 2">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product3.jpg" alt="Produit 3">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product4.jpg" alt="Produit 4">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product5.jpg" alt="Produit 5">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product6.jpeg" alt="Produit 6">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product7.jpg" alt="Produit 7">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product8.jpg" alt="Produit 8">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product9.jpg" alt="Produit 9">
+        </div>
+
+        <div class="slide">
+            <img src="Images/product10.jpg" alt="Produit 10">
+        </div>
+
+        <button class="slide-button previous" onclick="changeSlide(-1)">
+            ❮
+        </button>
+
+        <button class="slide-button next" onclick="changeSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+    <div class="slide-dots">
+        <span class="dot active-dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+</section>
+
+
+                <!-- PREVIOUS BUTTON -->
+
+                <button
+                    class="slide-button previous"
+                    onclick="changeSlide(-1)"
+                    aria-label="Image précédente"
+                >
+                    ❮
+                </button>
+
+
+
+                <!-- NEXT BUTTON -->
+
+                <button
+                    class="slide-button next"
+                    onclick="changeSlide(1)"
+                    aria-label="Image suivante"
+                >
+                    ❯
+                </button>
+
+
+            </div>
+
+
+
+        <!-- =================================================
+             WHAT WE OFFER
+             ================================================= -->
+
+        <section class="content-box categories">
+
+
+            <span class="section-decoration">
+                ✦
+            </span>
+
+
+            <h2>
+                What We Offer
+            </h2>
+
+
+
+            <div class="category-container">
+
+    <a href="products.html" class="category">
+        <h3>Sweats & Capuches 👕</h3>
+    </a>
+
+    <a href="products.html" class="category">
+        <h3>Sacs & Portefeuilles 👜</h3>
+    </a>
+
+    <a href="products.html" class="category">
+        <h3>Notebooks & Carnets 📓</h3>
+    </a>
+
+    <a href="products.html" class="category">
+        <h3>Stylos originaux 🖊️</h3>
+    </a>
+
+    <a href="products.html" class="category">
+        <h3>Articles BTS 💜</h3>
+    </a>
+
+    <a href="products.html" class="category">
+        <h3>Accessoires & plus encore ✨</h3>
+    </a>
+
+</div>
+</section>
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
+    <footer class="site-footer">
+
+
+        <!-- Decorative elements -->
+
+        <div class="footer-decoration footer-decoration-one"></div>
+
+        <div class="footer-decoration footer-decoration-two"></div>
+
+
+
+        <div class="footer-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="footer-section">
+
+
+                <h2>
+                    Contact Us!
+                </h2>
+
+
+                <p>
+
+                    📲 WhatsApp :
+
+                    <a href="https://wa.me/21657123668">
+
+                        +216 57 12 36 68
+
+                    </a>
+
+                </p>
+
+
+                <p>
+
+                    📸 Instagram :
+
+                    <a href="#">
+
+                        Tabbystore.Tn
+
+                    </a>
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="footer-section">
+
+
+                <h2>
+                    Follow Us
+                </h2>
+
+
+                <p>
+
+                    📘 Facebook :
+
+                    <a href="#">
+
+                        Tabbystore.Tn
+
+                    </a>
+
+                </p>
+
+
+                <p>
+                    📦 Livraison Tunis 🇹🇳
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+    <p class="order-message">
+        Pour passer commande, contactez-nous sur nos pages
+        <strong>Facebook</strong>, <strong>Instagram</strong> ou <strong>WhatsApp</strong>.
+    </p>
+
+    <p>
+        © 2026 TabbyStore.TN · Tunisia
+    </p>
+
+</div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
