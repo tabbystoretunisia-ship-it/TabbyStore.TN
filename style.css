@@ -783,7 +783,9 @@ main {
    ===================================================== */
 
 @media (max-width: 750px) {
-
+.product-grid {
+    grid-template-columns: 1fr;
+}
 
     /* Header */
 
@@ -850,12 +852,13 @@ main {
 
     /* Categories */
 
-    .category-container {
-
+       .category-container {
         grid-template-columns: 1fr;
-
     }
 
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 
     /* Slideshow */
 
