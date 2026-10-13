@@ -907,7 +907,25 @@ main {
         padding: 45px 25px 20px;
 
     }
+    /* Products page */
 
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-category {
+        padding: 25px 15px;
+    }
+
+    .product-category h2 {
+        font-size: 30px;
+    }
+
+    /* Contact page */
+
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
 }
 /* =====================================================
    PRODUCTS PAGE

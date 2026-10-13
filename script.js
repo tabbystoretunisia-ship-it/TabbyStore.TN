@@ -476,6 +476,8 @@ function getProductImage(number) {
 
 
 const productModal = document.getElementById("product-modal");
+
+if (productModal) {
 const modalProductImage = document.getElementById("modal-product-image");
 const modalProductName = document.getElementById("modal-product-name");
 const modalProductPrice = document.getElementById("modal-product-price");
@@ -644,4 +646,71 @@ productModal.addEventListener("click", function(event) {
         productModal.style.display = "none";
     }
 
+});
+}
+// ==============================
+// HOMEPAGE SLIDESHOW
+// ==============================
+
+let slideIndex = 1;
+let slideTimer;
+
+function showSlide(n) {
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    if (!slides.length) {
+        return;
+    }
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    slides.forEach(function(slide) {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach(function(dot) {
+        dot.classList.remove("active-dot");
+    });
+
+    slides[slideIndex - 1].classList.add("active");
+
+    if (dots[slideIndex - 1]) {
+        dots[slideIndex - 1].classList.add("active-dot");
+    }
+}
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+    resetSlideTimer();
+}
+
+function currentSlide(n) {
+    slideIndex = n;
+    showSlide(slideIndex);
+    resetSlideTimer();
+}
+
+function startSlideTimer() {
+    slideTimer = setInterval(function() {
+        slideIndex++;
+        showSlide(slideIndex);
+    }, 4000);
+}
+
+function resetSlideTimer() {
+    clearInterval(slideTimer);
+    startSlideTimer();
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showSlide(slideIndex);
+    startSlideTimer();
 });
