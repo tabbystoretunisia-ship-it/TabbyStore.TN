@@ -1393,3 +1393,29 @@ main {
     font-weight: 600;
     margin: 0;
 }
+/* =====================================================
+   FINAL MOBILE OVERRIDES
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    /* Products: 2 products per row */
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Keep products inside the beige category box */
+    .product-category {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 15px;
+    }
+
+    /* Contact: one item per row */
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
