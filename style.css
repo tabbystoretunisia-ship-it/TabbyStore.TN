@@ -1419,3 +1419,16 @@ main {
         gap: 15px;
     }
 }
+@media (max-width: 750px) {
+
+    .product-card {
+        position: relative;
+    }
+
+    .view-product {
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
