@@ -1455,3 +1455,19 @@ main {
         box-sizing: border-box;
     }
 }
+@media (max-width: 750px) {
+
+    .product-modal-content {
+        width: 100%;
+        max-width: 500px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .product-gallery {
+        height: 60vh;
+        max-height: 450px;
+    }
+}
